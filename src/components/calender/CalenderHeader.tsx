@@ -8,19 +8,19 @@ interface CalendarHeaderProps {
 
 const CalendarHeader: React.FC<CalendarHeaderProps> = ({ currentMonth, onPrevious, onNext }) => {
   return (
-    <div className="flex items-center justify-between p-4 bg-gray-100 border-b">
+    <div className="flex items-center justify-between p-4 bg-gray-800 border-b border-gray-700 rounded-t-lg shadow-md">
       <button
         onClick={onPrevious}
-        className="px-3 py-1 text-white bg-blue-500 rounded hover:bg-blue-600"
+        className="p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
-        Previous
+        &lt; {/* Left Arrow */}
       </button>
-      <h2 className="text-lg font-bold">{currentMonth}</h2>
+      <h2 className="text-lg font-semibold text-white">{currentMonth}</h2>
       <button
         onClick={onNext}
-        className="px-3 py-1 text-white bg-blue-500 rounded hover:bg-blue-600"
+        className="p-2 text-white bg-blue-600 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
-        Next
+        &gt; {/* Right Arrow */}
       </button>
     </div>
   );
