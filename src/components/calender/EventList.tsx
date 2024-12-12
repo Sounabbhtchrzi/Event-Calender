@@ -6,6 +6,7 @@ interface EventListProps {
   onDelete: (index: number) => void;
 }
 
+// Component for list of events for a day
 const EventList: React.FC<EventListProps> = ({ events, onEdit, onDelete }) => {
   return (
     <div className="p-4 bg-gray-50 border rounded">

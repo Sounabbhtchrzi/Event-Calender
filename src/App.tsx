@@ -44,20 +44,18 @@ const App: React.FC = () => {
     setEvents((prev) => {
       const updatedEvents = [...(prev[dateKey] || [])];
       if (editingIndex !== null) {
-        // Edit the existing event
         updatedEvents[editingIndex] = event;
       } else {
-        // Add a new event
         updatedEvents.push(event);
       }
       return { ...prev, [dateKey]: updatedEvents };
     });
 
-    // Reset states
     setIsModalOpen(false);
     setCurrentEvent(null);
     setEditingIndex(null);
   };
+
 
   const handleDeleteEvent = (index: number) => {
     if (!selectedDate) return;
@@ -69,6 +67,7 @@ const App: React.FC = () => {
       return { ...prev, [dateKey]: updatedEvents };
     });
   };
+
 
   const handleEditEvent = (index: number) => {
     if (!selectedDate) return;
@@ -82,6 +81,7 @@ const App: React.FC = () => {
     }
   };
 
+  
   return (
     <div
       className="w-full h-full bg-cover bg-center bg-fixed"

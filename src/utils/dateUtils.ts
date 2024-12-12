@@ -9,7 +9,7 @@ export const getDaysInMonth = (date: Date): Date[] => {
 
 export const getStartOfMonth = (date: Date): Date => {
   const startOfMonth = new Date(date);
-  startOfMonth.setDate(1); // Set the date to the 1st of the month
-  startOfMonth.setHours(0, 0, 0, 0); // Set to the start of the day
+  startOfMonth.setDate(1); 
+  startOfMonth.setHours(0, 0, 0, 0); 
   return startOfMonth;
 };

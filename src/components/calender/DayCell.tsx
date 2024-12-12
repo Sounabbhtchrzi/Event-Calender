@@ -7,8 +7,9 @@ interface DayCellProps {
   onClick: () => void;
 }
 
+// Component for displaying each day cell
 const DayCell: React.FC<DayCellProps> = ({ date, events, onClick }) => {
-  if (!date) return <div className="p-4" />; // Return an empty cell if the date is null
+  if (!date) return <div className="p-4" />;
 
   const isCurrentDay = isToday(date);
 
