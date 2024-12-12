@@ -17,7 +17,7 @@ Check out the live application here:
 
 ## 📸 Preview
 
-![Event Calendar Screenshot](/demo.png)  
+![Event Calendar Screenshot](./public/demo.png)  
 
 
 ## 🧰 Tech Stack
